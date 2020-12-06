@@ -2346,6 +2346,7 @@ html[dir="rtl"] .dropdownToolbarButton::after {
   margin: 0;
   padding: 1px 0 2px;
   border: none;
+  -webkit-appearance : none;
   background-color: rgba(215, 215, 219, 1);
   background-color: var(--dropdown-btn-bg-color);
 }
