@@ -23,12 +23,6 @@ See https://github.com/adobe-type-tools/cmap-resources
 <html dir="ltr" mozdisallowselectionprint>
   <head>
     <meta charset="utf-8">
-    <script type="text/javascript">
-      var targetProtocol = "https:";
-      if (location.protocol != targetProtocol && location.hostname !="localhost" && location.hostname !="127.0.0.1")
-      location.href = targetProtocol +
-        location.href.substring(location.protocol.length);
-    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="google" content="notranslate">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,11 +37,11 @@ See https://github.com/adobe-type-tools/cmap-resources
 <script src="../build/pdf.js"></script>
 
 
-  <script src="viewer.js"></script>  
+  <script src="viewer.js"></script>
 
   </head>
 
-  <body tabindex="1" class="loadingInProgress">
+  <body tabindex="1">
     <div id="outerContainer">
 
       <div id="sidebarContainer">
@@ -62,6 +56,9 @@ See https://github.com/adobe-type-tools/cmap-resources
             <button id="viewAttachments" class="toolbarButton" title="Show Attachments" tabindex="4" data-l10n-id="attachments">
                <span data-l10n-id="attachments_label">Attachments</span>
             </button>
+            <button id="viewLayers" class="toolbarButton" title="Show Layers (double-click to reset all layers to the default state)" tabindex="5" data-l10n-id="layers">
+               <span data-l10n-id="layers_label">Layers</span>
+            </button>
           </div>
         </div>
         <div id="sidebarContent">
@@ -71,8 +68,10 @@ See https://github.com/adobe-type-tools/cmap-resources
           </div>
           <div id="attachmentsView" class="hidden">
           </div>
+          <div id="layersView" class="hidden">
+          </div>
         </div>
-        <div id="sidebarResizer" class="hidden"></div>
+        <div id="sidebarResizer"></div>
       </div>  <!-- sidebarContainer -->
 
       <div id="mainContainer">
