@@ -382,7 +382,7 @@ const defaultOptions = {
     kind: OptionKind.API
   },
   scriptingSrc: {
-    value: "../build/pdf.sandbox.js",
+    value: "./build/pdf.sandbox.js",
     kind: OptionKind.VIEWER
   },
   verbosity: {
@@ -394,7 +394,7 @@ const defaultOptions = {
     kind: OptionKind.WORKER
   },
   workerSrc: {
-    value: "../build/pdf.worker.js",
+    value: "./build/pdf.worker.js",
     kind: OptionKind.WORKER
   }
 };
